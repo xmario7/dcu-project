@@ -12,3 +12,21 @@
 	margin: auto;
 	height: 10px;
 }
+.custom-hr2{
+	border-top: 10px solid grey;
+	height: 10px;
+}
+#logo_profesor{
+	text-align: center;
+	margin: auto;
+}
+#migasdepan{
+	font-size: large;
+	color: white;
+}
+#img_custom{
+	width: 50%;
+}
+.jumbotron{
+	background-color:grey;
+}
