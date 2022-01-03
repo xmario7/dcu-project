@@ -1,0 +1,65 @@
+#overflow{
+	width:  1250px;
+    overflow-x: scroll;
+}
+.card-img-top {
+    width: 80%;
+    height: 15rem;
+}
+.custom-hr{
+	border-top: 5px solid grey;
+	margin: auto;
+	height: 5px;
+}
+.horizontal-scrollable{
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+        /* Decorations */
+          
+.col-xl-4 {
+            color: black;
+            padding-bottom: 5px;
+            padding-top: 5px; 
+}
+          
+.col-xl-4:nth-child(2n+1) {
+            background: #c0c0c0;
+}
+          
+.col-xl-4:nth-child(2n+2) {
+            background: #808080;
+}
+#acto2{
+	 background: #c0c0c0;
+}
+#acto4{
+	 background: #c0c0c0;
+}
+#acto6{
+	 background: #c0c0c0;
+}
+#prio1{
+	 background: #b00000;
+	 color: white;
+}
+#prio2{
+	 background: #ff4040;
+	 color: white;
+}
+#prio3{
+	 background: #ff8D8D;
+	 color: white;
+}
+#futureacts{
+	background: #ffffff;
+}
+#recentchats{
+	background: #ffffff;
+}
+#calendar{
+    background: #ffffff;
+}
+#recentchats{
+    background: #ffffff;
+}
