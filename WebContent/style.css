@@ -30,3 +30,16 @@
 .jumbotron{
 	background-color:grey;
 }
+.list-group-custom{
+	border-left-color: #fff;
+	border-right-color: #fff;
+}
+.list-group-custom .list-group-item{
+	background-color: #fff;
+	color: black;
+	
+}
+.list-group-custom .list-group-item:hover {
+  background-color: #e1e1e1;
+  color:black;
+}
