@@ -17,17 +17,17 @@
 }
         /* Decorations */
           
-.col-xl-4 {
+.col-xl-3{
             color: black;
             padding-bottom: 5px;
             padding-top: 5px; 
 }
           
-.col-xl-4:nth-child(2n+1) {
+.col-xl-3:nth-child(2n+1) {
             background: #c0c0c0;
 }
           
-.col-xl-4:nth-child(2n+2) {
+.col-xl-3:nth-child(2n+2) {
             background: #808080;
 }
 #acto2{
@@ -51,15 +51,19 @@
 	 background: #ff8D8D;
 	 color: white;
 }
-#futureacts{
-	background: #ffffff;
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#800000;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
 }
-#recentchats{
-	background: #ffffff;
-}
-#calendar{
-    background: #ffffff;
-}
-#recentchats{
-    background: #ffffff;
+.float:hover{
+	color: #c0c0c0;
 }
