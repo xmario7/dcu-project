@@ -1,0 +1,48 @@
+#overflow{
+	height: 550px;
+    max-height: 550px;
+    overflow-y: scroll;
+}
+.card-img-top {
+    width: 80%;
+    height: 15rem;
+}
+
+.jumbotron{
+	background-color:grey;
+}
+.custom-hr{
+	border-top: 10px solid grey;
+	margin: auto;
+	height: 10px;
+}
+.custom-hr2{
+	border-top: 10px solid grey;
+	height: 10px;
+}
+#logo_profesor{
+	text-align: center;
+	margin: auto;
+}
+#migasdepan{
+	font-size: large;
+	color: white;
+}
+#img_custom{
+	width: 50%;
+}
+.jumbotron{
+	background-color:grey;
+}
+
+.list-group-custom2{
+	height: 300px;
+    max-height: 550px;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
+    
+}
+
+hr.vertical{
+	margin-left: 10px;
+}
