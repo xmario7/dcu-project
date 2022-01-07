@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title></title>
+<title>Menú Principal</title>
 <meta name="description" content="">
 <!-- CSS only -->
 <link
@@ -35,7 +35,7 @@
 			</button>
 			<div class="container-fluid collapse navbar-collapse" id="navbarNav">
 				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link" style="font-size: 1.1rem" href="#">Asignaturas</a>
+					<li class="nav-item"><a class="nav-link" style="font-size: 1.1rem" href="asignaturas.html">Asignaturas</a>
 					</li>
 					<li class="nav-item"><a class="nav-link" style="font-size: 1.1rem" href="profesores.html">Profesores</a>
 					</li>
@@ -70,10 +70,19 @@
 			</div>
 		</div>
 	</nav>
-	<div class="container-fluid" style="background-color:rgb(128, 0, 0);">
-		<div class="row d-flex justify-content-center">
-			<div class="col-lg-3 col-md-4 d-flex align-items-end"><img src="av.png" style="margin: auto; width: 10%; position: relative; top: 8px; margin-bottom:15px"></div>
-			<div class="col-lg-5 col-md-6 d-flex align-items-center" style="font-size: 1.1rem; color:white;">¡Bienvenido! Sergio M.</div>
+	<div class="jumbotron bg-light jumbotron-fluid">
+		<div class="row d-flex justify-content-center" style="background-color:rgb(128, 0, 0);">
+			<div class="col-xl-4 col-lg-5 col-md-6">
+				<div class="container-fluid d-flex justify-content-center mt-2 mb-2">
+					<img src="av.png" style="width: 15%">
+				</div>
+			</div>
+			<div class="col-xl-4 col-lg-5 col-md-6 d-flex align-self-center">
+				<div class="container-fluid d-flex justify-content-center mt-2 mb-2" style="color:white; font-size:20px;">
+					¡Bienvenido! Sergio M.
+				</div>
+				
+			</div>
 		</div>
 	</div>
 	<div class="container-fluid">
@@ -212,17 +221,17 @@
 		</div>
 		<div class="row d-flex justify-content-center mt-4 mb-5">
 			<div class="col-xl-3 col-lg-4 col-md-6 col-6" style="background-color:white;">
-				<div class="card mb-3" style="max-width: 450px;">
+				<div class="card border-secondary mb-3" style="max-width: 450px;">
 					<div class="row g-0">
 						<div class="col-3">
-							<img src="grupos.png" class="img-fluid rounded-start" alt="Responsive image" style="padding:10px 10px;">
+							<a href="#"><img src="grupos.png" class="img-fluid rounded-start" alt="Responsive image" style="padding:10px 10px;"></a>
 						</div>
 						<div class="col-9">
 							<div class="card-body">
-								<h5 class="card-title">Card title</h5>
-								<p class="card-text">This is a wider</p>
-								<p class="card-text">
-									<button type="button" class="btn btn-success">Success</button>
+								<h5 class="card-title">DCU G09</h5>
+								<p class="card-header" style="color:DimGray;">Tienes <span class="red">12</span> mensajes sin leer.</p>
+								<p class="card-text d-flex justify-content-end mt-1">
+									<button type="button" class="btn btn-primary btn-sm" disabled>Grupo</button>
 								</p>
 							</div>
 						</div>
@@ -230,17 +239,17 @@
 				</div>
 			</div>
 			<div class="col-xl-3 col-lg-4 col-md-6 col-6" style="background-color:white;">
-				<div class="card mb-3" style="max-width: 450px;">
+				<div class="card border-secondary mb-3" style="max-width: 450px;">
 						<div class="row g-0">
 							<div class="col-3">
-								<img src="grupos.png" class="img-fluid rounded-start" alt="Responsive image" style="padding:10px 10px;">
+								<a href="#"><img src="av12.png" class="img-fluid rounded-start" alt="Responsive image" style="padding:10px 10px;"></a>
 							</div>
 							<div class="col-9">
 								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="card-text">This is a wider</p>
-									<p class="card-text">
-										<button type="button" class="btn btn-success">Success</button>
+									<h5 class="card-title">Pedro V.</h5>
+									<p class="card-header" style="color:DimGray;">Tienes <span class="red">3</span> mensajes sin leer.</p>
+									<p class="card-text d-flex justify-content-end mt-1">
+										<button type="button" class="btn btn-warning btn-sm" disabled>Profesor</button>
 									</p>
 								</div>
 							</div>
@@ -248,17 +257,17 @@
 					</div>
 			</div>
 			<div class="col-xl-3 col-lg-4 col-md-6 col-6" style="background-color:white;">
-				<div class="card mb-3" style="max-width: 450px;">
+				<div class="card border-secondary mb-3" style="max-width: 450px;">
 						<div class="row g-0">
 							<div class="col-3">
-								<img src="grupos.png" class="img-fluid rounded-start" alt="Responsive image" style="padding:10px 10px;">
+								<a href="#"><img src="grupos.png" class="img-fluid rounded-start" alt="Responsive image" style="padding:10px 10px;"></a>
 							</div>
 							<div class="col-9">
 								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="card-text">This is a wider</p>
-									<p class="card-text">
-										<button type="button" class="btn btn-success">Success</button>
+									<h5 class="card-title">RCO G14</h5>
+									<p class="card-header"style="color:DimGray;">Tienes <span class="red">9</span> mensajes sin leer.</p>
+									<p class="card-text d-flex justify-content-end mt-1">
+										<button type="button" class="btn btn-primary btn-sm" disabled>Grupo</button>
 									</p>
 								</div>
 							</div>
@@ -266,17 +275,17 @@
 					</div>
 			</div>
 			<div class="col-xl-3 col-lg-4 col-md-6 col-6" style="background-color:white;">
-				<div class="card mb-3" style="max-width: 450px;">
+				<div class="card border-secondary mb-3" style="max-width: 450px;">
 						<div class="row g-0">
 							<div class="col-3">
-								<img src="grupos.png" class="img-fluid rounded-start" alt="Responsive image" style="padding:10px 10px;">
+								<a href="#"><img src="av.png" class="img-fluid rounded-start" alt="Responsive image" style="padding:10px 10px;"></a>
 							</div>
 							<div class="col-9">
 								<div class="card-body">
-									<h5 class="card-title">Card title</h5>
-									<p class="card-text">This is a wider</p>
-									<p class="card-text">
-										<button type="button" class="btn btn-success">Success</button>
+									<h5 class="card-title">Mario S.</h5>
+									<p class="card-header" style="color:grey;">No tienes mensajes nuevos.</p>
+									<p class="card-text d-flex justify-content-end mt-1">
+										<button type="button" class="btn btn-success btn-sm" disabled>Alumno</button>
 									</p>
 								</div>
 							</div>

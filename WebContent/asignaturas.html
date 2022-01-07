@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Asignaturas</title>
+<meta name="description" content="">
+<!-- CSS only -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+	crossorigin="anonymous"></script>
+<link rel="stylesheet"
+	href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="/css/style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="Dstyle.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark"
+		id="barraSuperior">
+		<div class="container-fluid">
+			<a class="navbar-brand mx-auto" href="index.html"><img
+				src="zyro-image.png" class="img-fluid" width="150"></a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="container-fluid collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item"><a class="nav-link active"
+						style="font-size: 1.1rem" href="asignaturas.html">Asignaturas</a></li>
+					<li class="nav-item"><a class="nav-link"
+						style="font-size: 1.1rem" href="profesores.html">Profesores</a></li>
+					<li class="nav-item"><a class="nav-link"
+						style="font-size: 1.1rem" href="compañeros.html">Compañeros</a></li>
+					<li class="nav-item"><a class="nav-link"
+						style="font-size: 1.1rem" href="grupos.html">Grupos</a></li>
+				</ul>
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link" href="#"> <i
+							class="bi-gear" style="font-size: 1.1rem;"> Ajustes </i>
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"> <i
+							class="bi-chat-square" style="font-size: 1.1rem;"> Chat </i>
+					</a></li>
+					<li class="nav-item"><a class="nav-link" href="#"> <i
+							class="bi-door-open" style="font-size: 1.1rem;"> Salir </i>
+					</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	
+	
+	<div class="container">
+		<div class="row mt-5 mr-4 ml-4 d-flex justify-content-center">
+			<div class="col-10">
+				<select class="form-select form-select-lg mb-3"
+					aria-label=".form-select-lg example">
+					<option selected>Seleccione asignatura...</option>
+					<option value="1">IAP</option>
+					<option value="2">DCU</option>
+					<option value="3">DEW</option>
+					<option value="4">RCO</option>
+					<option value="5">SRE</option>
+					<option value="6">SSR</option>
+				</select>
+			</div>
+		</div>
+		<div class="row mt-4">
+			<div class="col-lg-6"><h3>Detalles de la asignatura</h3></div>
+		</div>
+		<hr class="custom-hr">
+		<div class="row mt-2">
+			<div class="col">
+				<div class="form-floating">
+					<input type="email" class="form-control" id="floatingInput"
+						placeholder="name@example.com"> <label for="floatingInput"><span class="negrita">Nombre:</span> Diseño Centrado en el Usuario</label>
+				</div>
+			</div>
+		</div>
+		<div class="row mt-2">
+			<div class="col">
+				<div class="form-floating">
+					<input type="email" class="form-control" id="floatingInput"
+						placeholder="name@example.com"> <label for="floatingInput"><span class="negrita">Cuatrimestre:</span> 4A</label>
+				</div>
+			</div>
+		</div>
+		<div class="row mt-2">
+			<div class="col">
+				<div class="form-floating">
+					<input type="email" class="form-control" id="floatingInput"
+						placeholder="name@example.com"> <label for="floatingInput"><span class="negrita">Créditos (ECTS):</span> 4.5</label>
+				</div>
+			</div>
+		</div>
+		<div class="row mt-5">
+			<div class="col-lg-6"><h3>Actos de Evaluación</h3></div>
+		</div>
+		<hr class="custom-hr">
+		<div class="container-fluid mt-4 mb-4 mr-4"
+			id="overflowasig">
+			<div class="row mt-4 mb-4">
+				<div class="col mb-4">
+					<div class="card d-flex justify-content-center" style="width: 20rem; text-align: center;">
+						<button type="button" class="btn btn-primary">Acto 1</button>
+						<div class="card-body">
+							<div class="card-header">
+								<b>Nombre del Acto:</b> Planificación del Proyecto
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"><b>Descripción:</b> Actividad creada para subir el documento de Diseño y Planificación, que constituye el primer Acto Evaluable de la asignatura, con un peso de 10% de la nota final.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card d-flex justify-content-center" style="width: 20rem; text-align: center;">
+						<button type="button" class="btn btn-primary">Acto 2</button>
+						<div class="card-body">
+							<div class="card-header">
+								<b>Nombre del Acto:</b> Entregable 1
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"><b>Descripción:</b> En esta tarea debéis subir un PDF con el análisis de necesidades que habéis realizado para el proyecto de DCU junto con el diseño de la/s Persona/s Primaria/s y sus Escenarios de uso.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card d-flex justify-content-center" style="width: 20rem; text-align: center;">
+						<button type="button" class="btn btn-primary">Acto 3</button>
+						<div class="card-body">
+							<div class="card-header">
+								<b>Nombre del Acto:</b> Entregable 2
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"><b>Descripción:</b> En esta tarea debéis subir el segundo entregable del proyecto de DCU, el cual consiste en el desarrollo de un boceto de aplicación web que dé soporte a los objetivos de las Personas (Profesor y Estudiante) que creasteis en la entrega 1 así como a los requisitos específicos definidos en la descripción del proyecto. El boceto debe incluir una versión de la web para navegadores de escritorio y otra para dispositivos móviles.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-4 mb-5">
+				<div class="col mb-4">
+					<div class="card d-flex justify-content-center" style="width: 20rem; text-align: center;">
+						<button type="button" class="btn btn-primary">Acto 4</button>
+						<div class="card-body">
+							<div class="card-header">
+								<b>Nombre del Acto:</b> Entregable 3
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"><b>Descripción:</b> El trabajo a realizar en este entregable consiste en implementar un prototipo de interfaz web responsive para la Persona Estudiante. Este prototipo debe ajustarse lo máximo posible al boceto que habéis diseñado en el entregable 2. Además, deberéis presentar una evaluación del prototipo utilizando algunas de las técnicas vistas en clase.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card d-flex justify-content-center" style="width: 20rem; text-align: center;">
+						<button type="button" class="btn btn-primary">Acto 5</button>
+						<div class="card-body">
+							<div class="card-header">
+								<b>Nombre del Acto:</b> Entregable 4
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"><b>Descripción:</b> El trabajo a realizar en este entregable consiste en extender el prototipo del entregable anterior para realizar una conexión Ajax al servicio REST implementado en IAP que proporciona el expediente de un estudiante. Podéis consultar el expediente de cualquier estudiante de la BD. De la información que os proporciona la API debéis inyectar en la página correspondiente al perfil de un estudiante lo siguiente: nombre, apellidos, dirección postal y la lista de asignaturas sin la nota .</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col mb-4">
+					<div class="card d-flex justify-content-center" style="width: 20rem; text-align: center;">
+						<button type="button" class="btn btn-primary">Acto 6</button>
+						<div class="card-body">
+							<div class="card-header">
+								<b>Nombre del Acto:</b> Parcial DCU
+							</div>
+							<ul class="list-group list-group-flush">
+								<li class="list-group-item"><b>Descripción:</b> Prueba online de tipo test y respuesta abierta sobre los contenidos vistos en la asignatura. Día 20 de Diciembre de 2021 a las 12:30 a través de la sección de "Exámenes" de Poliformat.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

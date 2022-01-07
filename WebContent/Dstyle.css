@@ -2,6 +2,11 @@
 	width:  1250px;
     overflow-x: scroll;
 }
+#overflowasig{
+	height: 550px;
+    max-height: 550px;
+    overflow-y: scroll;
+}
 .card-img-top {
     width: 80%;
     height: 15rem;
@@ -66,4 +71,10 @@
 }
 .float:hover{
 	color: #c0c0c0;
+}
+span.red{
+	color: red;
+}
+span.negrita{
+	font-weight: bold;
 }
