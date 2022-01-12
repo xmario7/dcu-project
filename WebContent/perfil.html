@@ -21,6 +21,28 @@
 <link rel="stylesheet" href="/css/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$.ajax({
+		url:"http://localhost:8081/alumno/12345678W",
+		method: "GET",
+		headers:{
+			Accept: "application/json"
+		},
+		datatype: "json",
+		success: function(expediente){
+			$("#nombre").html("<b>" + expediente.nombre + " " + expediente.apellidos + "</b>");
+			$("#direccion").html(expediente["direccion-postal"][0].direccion + ", " + expediente["direccion-postal"][0]["codigo-postal"] + ", " + expediente["direccion-postal"][0].ciudad + ", " + expediente["direccion-postal"][0].provincia);
+			$.each(expediente.asignaturas, function(index, asignatura){
+				$("#asignaturas").append('<button type="button" class="btn btn-outline-secondary">' + asignatura.acronimo + '</button>');
+			});
+		
+		}
+	});
+});
+
+</script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-sm navbar-dark bg-dark"
@@ -78,8 +100,8 @@
 					<img src="av12.png" style="width: 25%">
 				</div>
 				<div class="container-fluid d-flex justify-content-center">
-					<p style="font-size: larger">
-						<b>Alberto G.</b>
+					<p style="font-size: larger" id="nombre"> <!--CAMBIO NOMBRE-->
+						
 					</p>
 				</div>
 			</div>
@@ -99,16 +121,17 @@
 
 	<hr class="custom-hr">
 	<div class="container-fluid">
-		<div class="row ml-4">
+		<div class="row">
 			<div class="col-lg-5 mt-5">
-				<h4>Bibliografia</h4>
+				<h4>Biografía</h4>
 				<hr class="custom-hr2" width="100%">
 				<div class="form-group green-border-focus">
 					<textarea disabled class="form-control" rows="10" style="resize: none;">Lorem ipsum dolor sit amet, consectetur adip iscing elit. Sed vehicula eros vitae ex luctus efficitur. Vivamus aliquam tellus nulla. Curabitur dapibus quis dia m non posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla sit amet erat ac neque aliquet aliquet non a nisi. Nunc accumsan ultrices tellus, at pharetra sem blandit ac. Duis vulpu tate ut tellus sit amet feugiat. Proin sit amet tortor diam. Vestibulum quis ipsum vel massa sollicitudin dapibus. 
 					
 Lorem ipsum dolor sit amet, consectetur adip iscing elit. Sed vehicula eros vitae ex luctus efficitur. Vivamus aliquam tellus nulla. Curabitur dapibus quis dia m non posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla sit amet erat ac neque aliquet aliquet non a nisi. Nunc accumsan ultrices tellus, at pharetra sem blandit ac. Duis vulpu tate ut tellus sit amet feugiat. Proin sit amet tortor diam. Vestibulum quis ipsum vel massa sollicitudin dapibus.</textarea>
 				</div>
-			</div>	
+			</div>
+			
 			<div class="col-lg-2">
 				
 			</div>
@@ -134,17 +157,25 @@ Lorem ipsum dolor sit amet, consectetur adip iscing elit. Sed vehicula eros vita
 					<button type="button" class="btn btn-danger" style="float: right;"><i class="bi bi-lock-fill" style="font-size:1.15rem"></i></button>
 					</a>
 				</div>
-				<div class="mt-5">
-					<h4>Asignaturas favoritas</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-5 mt-5 mb-5">
+			<h4>Dirección postal</h4>
+			<hr class="custom-hr2" width="100%">
+			<div class="list-group">
+					<a href="#" class="list-group-item list-group-item-action" aria-current="true"><i class="bi bi-geo-alt" style="font-size:1.35rem" id="direccion"> </i> </a> 
 				</div>
+			</div>
+			<div class="col-lg-2"></div>
+			<div class="col-lg-5 mt-5 mb-5">
+				<h4>Asignaturas</h4>
 				<hr class="custom-hr2" width="100%">
-				<div class="btn-group btn-group-lg" role="group" aria-label="...">
-					<button type="button" class="btn btn-outline-secondary">IAP</button>
-					<button type="button" class="btn btn-outline-secondary">DCU</button>
+				<div class="btn-group btn-group-lg" role="group" aria-label="..." id="asignaturas">
+					
 				</div>
 			</div>
 		</div>
-	</div>
 
 </body>
 </html>

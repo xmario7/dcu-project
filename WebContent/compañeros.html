@@ -21,6 +21,29 @@
 <link rel="stylesheet" href="/css/style.css">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+	$.ajax({
+		url:"http://localhost:8081/alumno/20023409X",
+		method: "GET",
+		headers:{
+			Accept: "application/json"
+		},
+		datatype: "json",
+		success: function(expediente){
+			$(".nombre").append(expediente.nombre + " " + expediente.apellidos);
+			var asigs = ""
+			$.each(expediente.asignaturas, function(index, asignatura){
+				asigs+= asignatura.acronimo + ", ";
+			});
+			asigs = asigs.substring(0, asigs.length - 2)
+			$(".asignaturas").append(asigs);
+		}
+	});
+});
+
+</script>
 </head>
 <body>
 	<nav class="navbar navbar-expand-sm navbar-dark bg-dark"
@@ -111,11 +134,11 @@
 					<div class="card d-flex justify-content-center" style="width: 16rem; text-align: center;">
 						<a id="logo_profesor"href="perfil_alumno.html"><img src="av12.png" style="margin: auto; width: 60%; position: relative; top: 15px; margin-bottom:15px" alt="..."></a>
 						<div class="card-body">
-							<div class="card-header">
-								<b>Nombre:</b> Mario Sánchez
+							<div class="card-header nombre">
+								<b>Nombre:</b> 
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item"><b>Asignatura:</b> IAP</li>
+								<li class="list-group-item asignaturas"><b>Asignatura:</b> </li>
 							</ul>
 						</div>
 					</div>
@@ -125,11 +148,11 @@
 						style="width: 16rem; text-align: center;">
 						<a href="perfil_alumno.html"><img src="av12.png" style="margin: auto; width: 60%; position: relative; top: 15px; margin-bottom:15px" alt="..."></a>
 						<div class="card-body">
-							<div class="card-header">
-								<b>Nombre:</b> Mario Sánchez
+							<div class="card-header nombre">
+								<b>Nombre:</b> 
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item"><b>Asignatura:</b> IAP</li>
+							<ul class="list-group list-group-flush" id="asignaturas">
+								<li class="list-group-item asignaturas"><b>Asignatura:</b> </li>
 							</ul>
 						</div>
 					</div>
@@ -139,11 +162,11 @@
 						style="width: 16rem; text-align: center;">
 						<a href="perfil_alumno.html"><img src="av12.png" style="margin: auto; width: 60%; position: relative; top: 15px; margin-bottom:15px" alt="..."></a>
 						<div class="card-body">
-							<div class="card-header">
-								<b>Nombre:</b> Mario Sánchez
+							<div class="card-header nombre">
+								<b>Nombre:</b> 
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item"><b>Asignatura:</b> IAP</li>
+								<li class="list-group-item asignaturas"><b>Asignatura:</b> </li>
 							</ul>
 						</div>
 					</div>
@@ -155,11 +178,11 @@
 						style="width: 16rem; text-align: center;">
 						<a href="perfil_alumno.html"><img src="av12.png" style="margin: auto; width: 60%; position: relative; top: 15px; margin-bottom:15px" alt="..."></a>
 						<div class="card-body">
-							<div class="card-header">
-								<b>Nombre:</b> Mario Sánchez
+							<div class="card-header nombre">
+								<b>Nombre:</b> 
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item"><b>Asignatura:</b> IAP</li>
+								<li class="list-group-item asignaturas"><b>Asignatura:</b> </li>
 							</ul>
 						</div>
 					</div>
@@ -169,11 +192,11 @@
 						style="width: 16rem; text-align: center;">
 						<a href="perfil_alumno.html"><img src="av12.png" style="margin: auto; width: 60%; position: relative; top: 15px; margin-bottom:15px" alt="..."></a>
 						<div class="card-body">
-							<div class="card-header">
-								<b>Nombre:</b> Mario Sánchez
+							<div class="card-header nombre">
+								<b>Nombre:</b> 
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item"><b>Asignatura:</b> IAP</li>
+								<li class="list-group-item asignaturas"><b>Asignatura:</b> </li>
 							</ul>
 						</div>
 					</div>
@@ -183,11 +206,11 @@
 						style="width: 16rem; text-align: center;">
 						<a href="perfil_alumno.html"><img src="av12.png" style="margin: auto; width: 60%; position: relative; top: 15px; margin-bottom:15px" alt="..."></a>
 						<div class="card-body">
-							<div class="card-header">
-								<b>Nombre:</b> Mario Sánchez
+							<div class="card-header nombre">
+								<b>Nombre:</b> 
 							</div>
-							<ul class="list-group list-group-flush">
-								<li class="list-group-item"><b>Asignatura:</b> IAP</li>
+							<ul class="list-group list-group-flush" >
+								<li class="list-group-item asignaturas"><b>Asignatura:</b> </li>
 							</ul>
 						</div>
 					</div>
@@ -198,11 +221,11 @@
 					<div class="card" style="width: 16rem; text-align: center;">
 						<a href="perfil_alumno.html"><img src="av12.png" style="margin: auto; width: 60%; position: relative; top: 15px; margin-bottom:15px" alt="..."></a>
 						<div class="card-body">
-							<div class="card-header">
-								<b>Nombre:</b> Mario Sánchez
+							<div class="card-header nombre">
+								<b>Nombre:</b> 
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item"><b>Asignatura:</b> IAP</li>
+								<li class="list-group-item asignaturas"><b>Asignatura:</b> </li>
 							</ul>
 						</div>
 					</div>
@@ -212,11 +235,11 @@
 						style="width: 16rem; text-align: center;">
 						<a href="perfil_alumno.html"><img src="av12.png" style="margin: auto; width: 60%; position: relative; top: 15px; margin-bottom:15px" alt="..."></a>
 						<div class="card-body">
-							<div class="card-header">
-								<b>Nombre:</b> Mario Sánchez
+							<div class="card-header nombre">
+								<b>Nombre:</b> 
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item"><b>Asignatura:</b> IAP</li>
+								<li class="list-group-item asignaturas"><b>Asignatura:</b> </li>
 							</ul>
 						</div>
 					</div>
@@ -226,11 +249,11 @@
 						style="width: 16rem; text-align: center;">
 						<a href="perfil_alumno.html"><img src="av12.png" style="margin: auto; width: 60%; position: relative; top: 15px; margin-bottom:15px" alt="..."></a>
 						<div class="card-body">
-							<div class="card-header">
-								<b>Nombre:</b> Mario Sánchez
+							<div class="card-header nombre">
+								<b>Nombre:</b> 
 							</div>
 							<ul class="list-group list-group-flush">
-								<li class="list-group-item"><b>Asignatura:</b> IAP</li>
+								<li class="list-group-item asignaturas"><b>Asignatura:</b> </li>
 							</ul>
 						</div>
 					</div>
